@@ -1,0 +1,20 @@
+{
+    "name": "extend",
+    "repo": "gamtiq/extend",
+    "description": "Make one class (constructor function) inherited from another",
+    "version": "0.0.1",
+    "keywords": [
+        "extend",
+        "inherit",
+        "prototype",
+        "inheritance",
+        "class"
+    ],
+    "dependencies": {},
+    "development": {},
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": [
+        "index.js"
+    ]
+}
