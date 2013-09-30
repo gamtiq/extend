@@ -8,43 +8,93 @@ Based on [extend](http://yuilibrary.com/yui/docs/api/classes/YUI.html#method_ext
 
 ### Component
 
-Install component:
-
-    npm install -g component
-
-Then:
-
     component install gamtiq/extend
+
+### Jam
+
+    jam install extend
+
+### Bower
+
+    bower install extend
+
+### AMD, Node, script tag
+
+Use `dist/extend.js` or `dist/extend.min.js` (minified version).
 
 ## Usage
 
-```js
+### Component
 
-    var extend = require("extend");
+```js
+var extend = require("extend");
+...
+```
+
+### Node
+
+```js
+var extend = require("./path/to/dist/extend.js");
+...
+```
+
+### Jam
+
+```js
+require(["extend"], function(extend) {
     ...
-    var SuperClass = function(a, b) {
-        ...
-    };
-    SuperClass.prototype.method1 = function(c, d, e) {
-        ...
-    };
+});
+```
+
+### AMD
+
+```js
+define(["path/to/dist/extend.js"], function(extend) {
     ...
-    var SubClass = function(a, b) {
-        ...
-        SubClass.superconstructor.call(this, a, b);
-        // or
-        // SubClass.superconstructor.apply(this, arguments);
-        ...
-    };
-    extend(SubClass, SuperClass);
+});
+```
+
+### Bower, script tag
+
+```html
+<!-- Use bower_components/extend/dist/extend.js if the library was installed via Bower -->
+<script type="text/javascript" src="path/to/dist/extend.js"></script>
+<script type="text/javascript">
+    // extend is available via extend field of window object
     ...
-    SubClass.prototype.method1 = function(c, d, e) {
-        ...
-        SubClass.superclass.method1.call(this, c, d, e);
-        // or
-        // SubClass.superclass.method1.apply(this, arguments);
-        ...
-    };
+</script>
+```
+
+## Example
+
+```js
+var SuperClass = function(a, b) {
+    ...
+};
+SuperClass.prototype.method1 = function(c, d, e) {
+    ...
+};
+...
+var SubClass = function(a, b) {
+    ...
+    SubClass.superconstructor.call(this, a, b);
+    // or
+    // SubClass.superconstructor.apply(this, arguments);
+    ...
+};
+extend(SubClass, SuperClass);
+...
+SubClass.prototype.method1 = function(c, d, e) {
+    ...
+    SubClass.superclass.method1.call(this, c, d, e);
+    // or
+    // SubClass.superclass.method1.apply(this, arguments);
+    ...
+};
+...
+if (extend.isSubclass(SubClass, SuperClass)) {
+    ...
+}
 ```
 
 ## API
@@ -54,6 +104,10 @@ Then:
 Replace value of `prototype` field of `SubClass` by another object that inherits from `prototype` of `ParentClass`.
 
 Returns `SubClass`.
+
+### extend.isSubclass(SubClass: Function, ParentClass: Function): Boolean
+
+Test whether `SubClass` is inherited from `ParentClass`.
 
 ## Licence
 

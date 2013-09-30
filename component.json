@@ -2,7 +2,7 @@
     "name": "extend",
     "repo": "gamtiq/extend",
     "description": "Make one class (constructor function) inherited from another",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "keywords": [
         "extend",
         "inherit",

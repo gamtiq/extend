@@ -1,0 +1,26 @@
+{
+  "name": "extend",
+  "main": ["dist/extend.js", "dist/extend.min.js"],
+  "version": "0.0.2",
+  "homepage": "https://github.com/gamtiq/extend",
+  "authors": [
+    "Denis Sikuler"
+  ],
+  "description": "Make one class (constructor function) inherited from another",
+  "keywords": [
+    "extend",
+    "inherit",
+    "prototype",
+    "inheritance",
+    "class"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "build",
+    "test",
+    "tests"
+  ]
+}
