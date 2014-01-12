@@ -4,6 +4,9 @@ Make one class (constructor function) inherited from another.
 
 Based on [extend](http://yuilibrary.com/yui/docs/api/classes/YUI.html#method_extend) method from [YUI library](http://yuilibrary.com).
 
+[![Build Status](https://travis-ci.org/gamtiq/extend.png)](https://travis-ci.org/gamtiq/extend)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
 ## Installation
 
 ### Component
@@ -96,6 +99,8 @@ if (extend.isSubclass(SubClass, SuperClass)) {
     ...
 }
 ```
+
+See `test/extend.js` for additional examples.
 
 ## API
 

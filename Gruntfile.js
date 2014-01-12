@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         
         jshint: {
-            files: ["*.js"],
+            files: ["*.js", "test/*.js"],
             
             options: {
                 // Enforcing
@@ -30,6 +30,10 @@ module.exports = function(grunt) {
             }
         },
         
+        mochacli: {
+            all: {}
+        },
+        
         uglify: {
             minify: {
                 src: "dist/extend.js",
@@ -52,10 +56,12 @@ module.exports = function(grunt) {
     // Plugins
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-contrib-uglify");
+    grunt.loadNpmTasks("grunt-mocha-cli");
     grunt.loadNpmTasks("grunt-umd");
     
     // Tasks
     grunt.registerTask("build", ["umd", "uglify"]);
-    grunt.registerTask("default", ["jshint"]);
-    grunt.registerTask("all", ["jshint", "build"]);
+    grunt.registerTask("test", ["mochacli"]);
+    grunt.registerTask("default", ["jshint", "test"]);
+    grunt.registerTask("all", ["default", "build"]);
 };
