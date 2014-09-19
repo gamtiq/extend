@@ -114,6 +114,11 @@ Returns `SubClass`.
 
 Test whether `SubClass` is inherited from `ParentClass`.
 
+## Related projects
+
+* [basespace](https://github.com/gamtiq/basespace)
+* [mixing](https://github.com/gamtiq/mixing)
+
 ## Licence
 
 MIT
