@@ -1,6 +1,6 @@
 {
   "name": "extend",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Make one class (constructor function) inherited from another",
   "main": "index.js",
   "scripts": {

@@ -1,7 +1,7 @@
 {
   "name": "extend",
   "main": ["dist/extend.js", "dist/extend.min.js"],
-  "version": "0.0.2",
+  "version": "0.1.0",
   "homepage": "https://github.com/gamtiq/extend",
   "authors": [
     "Denis Sikuler"

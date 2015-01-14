@@ -9,15 +9,15 @@ Based on [extend](http://yuilibrary.com/yui/docs/api/classes/YUI.html#method_ext
 
 ## Installation
 
-### Component
+### [Component](https://github.com/componentjs/component)
 
     component install gamtiq/extend
 
-### Jam
+### [Jam](http://jamjs.org)
 
     jam install extend
 
-### Bower
+### [Bower](http://bower.io)
 
     bower install extend
 
