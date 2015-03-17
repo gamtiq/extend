@@ -1,3 +1,7 @@
+### 0.1.1 / 2015-03-17
+
+* add [jspm](https://jspm.io) configuration
+
 ### 0.1.0 / 2015-01-14
 
 * migration to [Component](https://github.com/componentjs/component) 1.0

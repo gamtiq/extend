@@ -47,7 +47,8 @@ module.exports = function(grunt) {
                 src: "index.js",
                 dest: "dist/extend.js",
                 objectToExport: "extend",
-                globalAlias: "extend"
+                globalAlias: "extend",
+                indent: "    "
             }
         }
         

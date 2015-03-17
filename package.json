@@ -1,6 +1,6 @@
 {
   "name": "extend",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Make one class (constructor function) inherited from another",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-contrib-uglify": "~0.2.4",
-    "grunt-umd": "~1.3.0",
+    "grunt-umd": "~1.7.0",
     "grunt-mocha-cli": "~1.5.0"
   },
   "jam": {
@@ -38,5 +38,8 @@
   },
   "categories": [
     "Utilities"
-  ]
+  ],
+  "jspm": {
+    "format": "cjs"
+  }
 }
