@@ -17,6 +17,10 @@ Based on [extend](http://yuilibrary.com/yui/docs/api/classes/YUI.html#method_ext
 
     jam install extend
 
+### [JSPM](http://jspm.io)
+
+    jspm install extend
+
 ### [Bower](http://bower.io)
 
     bower install extend
@@ -34,6 +38,13 @@ var extend = require("extend");
 ...
 ```
 
+### Duo
+
+```js
+var extend = require("gamtiq/extend");
+...
+```
+
 ### Node
 
 ```js
@@ -45,6 +56,14 @@ var extend = require("./path/to/dist/extend.js");
 
 ```js
 require(["extend"], function(extend) {
+    ...
+});
+```
+
+### JSPM
+
+```js
+System.import("extend").then(function(extend) {
     ...
 });
 ```
